@@ -60,7 +60,13 @@ class _HomescreenState extends State<Homescreen> {
                               prefixIcon: const Icon(Icons.search_rounded,
                                   color: Colors.white, size: 20),
                               hintText: 'Search "Punjabi Lyrics"',
-                              hintStyle: const TextStyle(color: Colors.white70),
+                              hintStyle: const TextStyle(
+                                  color:Color.fromRGBO(97, 97, 107, 1),
+                                fontSize: 14,
+                                fontFamily: "Syne",
+                                fontWeight: FontWeight.w500
+
+                              ),
                               suffixIcon: const Icon(Icons.mic_rounded,
                                   color: Colors.white, size: 20),
                               border: OutlineInputBorder(
@@ -150,6 +156,18 @@ class _HomescreenState extends State<Homescreen> {
                   width: 135,
                 ),
               ),
+              Positioned(
+                  top: 71,
+                  left: 293,
+                  child: Container(
+                width: 0.5,
+                height: 22,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  border: Border(left: BorderSide(width: 1,color: Colors.grey))
+
+                ),
+              ))
             ],
           ),
           Expanded(
